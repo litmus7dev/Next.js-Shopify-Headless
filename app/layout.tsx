@@ -28,6 +28,79 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="bg-white shadow-md">
+          <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" className="text-2xl font-bold text-gray-800">
+              Brand
+            </a>
+            <ul className="flex space-x-6 relative">
+              <li className="relative group">
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:text-gray-900 flex items-center"
+                >
+                  Women
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </a>
+                <ul className="absolute left-0 mt-2 w-40 bg-white text-gray-800 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-gray-200 text-sm"
+                    >
+                      Tops
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-gray-200 text-sm"
+                    >
+                      Pants
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-gray-200 text-sm"
+                    >
+                      Shirts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:text-gray-300 flex items-center"
+                >
+                  Men
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-sm font-medium hover:text-gray-300 flex items-center"
+                >
+                  Accessories
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
